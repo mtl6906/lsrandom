@@ -13,7 +13,7 @@ namespace ls
 	{
 	
 	}
-	char Random::Seed()
+	char Random::seed()
 	{
 		if(!buffer.empty())
 		{
@@ -29,22 +29,22 @@ namespace ls
 			buffer.push(tmp[i]);
 		return tmp[0];
 	}
-	string Random::RandLetter(int n)
+	string Random::randLetter(int n)
 	{
 		string result(n, '\0');
 		{
 			lock_guard<mutex> random_lock(random_mutex);
 			for(int i=0;i<result.size();++i)
-				result[i] = Seed();
+				result[i] = seed();
 		}
 		for(int i=0;i<result.size();++i)
 		{
-			char sign = Sign(result[i]);
+			char sign = sign(result[i]);
 			result[i] = result[i] * sign % 26 + (sign > 0 ? 'A' : 'a');
 		}
 		return result;
 	}
-	char Random::Sign(char number)
+	char Random::sign(char number)
 	{
 		return number > 0 ? 1 : -1;
 	}	

@@ -13,11 +13,11 @@ namespace ls
 		int buffersize;
 		std::mutex random_mutex;
 		private:
-			char Sign(char number);
+			char sign(char number);
 		public:
 			Random(int buffersize = 128);
-			char Seed();
-			std::string RandLetter(int n);
+			char seed();
+			std::string randLetter(int n);
 	};
 }
 
