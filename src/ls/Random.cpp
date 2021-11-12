@@ -39,8 +39,8 @@ namespace ls
 		}
 		for(int i=0;i<result.size();++i)
 		{
-			char sign = sign(result[i]);
-			result[i] = result[i] * sign % 26 + (sign > 0 ? 'A' : 'a');
+			char s = sign(result[i]);
+			result[i] = result[i] * s % 26 + (s > 0 ? 'A' : 'a');
 		}
 		return result;
 	}

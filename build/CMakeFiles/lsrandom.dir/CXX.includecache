@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ls/Random.h
+string
+../include/ls/string
+queue
+../include/ls/queue
+mutex
+../include/ls/mutex
+
+/home/mtl/old/mtl/code/lib/Random/src/ls/Random.cpp
+ls/Random.h
+/home/mtl/old/mtl/code/lib/Random/src/ls/ls/Random.h
+cmath
+/home/mtl/old/mtl/code/lib/Random/src/ls/cmath
+cstdio
+/home/mtl/old/mtl/code/lib/Random/src/ls/cstdio
+
