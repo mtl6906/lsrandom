@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/testcase.dir/src/ls/Random.cpp.o CMakeFiles/testcase.dir/sample/sample.cpp.o  -o testcase 

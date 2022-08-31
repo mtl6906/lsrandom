@@ -1,2 +1,0 @@
-/usr/local/lib/liblsrandom.so
-/usr/local/include/ls/Random.h
